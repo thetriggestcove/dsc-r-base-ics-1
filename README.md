@@ -2,10 +2,8 @@
 
 ## TO DO
 
-* [ ] Images in from local 
 * [ ] Edit Text
 * [ ] Add in clear def of vector, dataframe, list 
-* [ ] Create matched R Scipt 
 * [ ] Create Matched RMarkdown 
 
 ## Introduction
@@ -20,7 +18,7 @@ By the end of this lesson, you will be able to:
 * [ ] See an example of element-wise execution in R
 * [ ] Learn to identify what a vector in R
 * [ ] Learn to identify what a data frame is in R
-* [ ] Subset an R objet using the square bracket operators
+* [ ] Subset an R object using the square bracket operators
 * [ ] Use the `$` to subset a vector from a data frame
 * [ ] Identify where to go to learn more about R's data structures. 
 
@@ -28,7 +26,7 @@ By the end of this lesson, you will be able to:
 ## Getting Comfortable 
 
 Now that we have R and RStudio installed, let's write some code and see R in action!
-For these exercices, you will be able to run most of these commands in RStudio.
+For these exercises, you will be able to run most of these commands in RStudio.
 There is an accompanying `.Rmd` file for each of these lessons in each repo!
 Feel free to use this to run each command after reading these REAMDEs.
 
@@ -37,7 +35,7 @@ In order to get practice working in RStudio, we suggest typing out this code in 
 
 In order to make a new script you need to click the little green icon in the top left corner and select NEW SCRIPT.
 
-* New Script IMG 
+![](img/rbase-1.png) 
 
 What is great about RStudio is that you can run any line of your script, just like you can run any cell in a Jupyter Notebook, individually.
 If you hold down `CMD` and press `RETURN` on any selected line in the editor, you can run a line.
@@ -56,13 +54,13 @@ Again, let's just add two numbers.
 
 In RStudio it might look like this: 
 
-* r-base-ics-1-2.png
+![](img/rbase-2.png) 
 
 We can run this line by typing `CMD + RETURN` assuming that the cursor is on the line you want to run.
 This will send this line of output to be run through the console. 
 Notice that your output is now shown below. 
 
-Not that impressive, most programming languges can do that!
+Not that impressive, most programming langues can do that!
 Let's now write something that actually looks like R.
 
 ```{r}
@@ -72,16 +70,16 @@ my_number <- 2 + 2
 Let's now run this code here that saves our operation into an object.
 Now don't just run it right away, let's take a second to think about what is the same and different as Python.
 As with Python, we are assigning some sort of expression to an object.
-The naming conventions of objects in R as pretty much the same as Python, but notice that in R we use the assingment operator `<-` as opposed to equals `=`.
-There are a couple of different reaons why this is.
+The naming conventions of objects in R as pretty much the same as Python, but notice that in R we use the assignment operator `<-` as opposed to equals `=`.
+There are a couple of different reasons why this is.
 The easy answer as to why this is, is because this is part of R's [style guide](). 
-The reason why this is is because... (addition in math langauge).
+The reason why this is is because... (addition in math language).
 
 Now as we run this line, we know from before that it will get sent to the console.
 So knowing that we know what will happen, let's instead direct our attention to the top right panel when we run this.
-This top right panel is our Global Environment and keeps track of what variables are in our workspace.
+This top right panel is our Global Environment and keeps track of what variables are in our work space.
 
-* r-base-ics-1-3.png
+![](img/rbase-3.png)
 
 If you did this, you screen will look something like above.
 The command was sent below and we now have a new value in our Global environment.
@@ -96,7 +94,7 @@ my_number * 2
 Our number, 4, would get multiplied by 2 just like in Python!
 
 But we know now that in data science, we don't usually want to multiply just ONE number, but rather a whole collection of numbers.
-This is where R's differencs start to show.
+This is where R's differences start to show.
 
 Let's now make a vector (what R calls a one dimensional collection of objects of the same type) of a some numbers using R's `c()` function. 
 We can pretend this is a bunch of data on the number of coffees you might drink in a day.
@@ -106,8 +104,8 @@ coffees <- c(2,1,2,3,1,2,0,2,3,1)
 ```
 
 Now if we were in Python, this might start out a as a list and we'd have to numpyifiy it in order to do some math operations on it.
-Since is a programming language that really is designed for manipulating numbers, we don't have to do something equivilent.
-Let's imagine we're trying to calculate how much caffinee we've taken in each day and realized that mug we're drinking out of is actually a little big bigger than the normal cup so we need to scale our entire data by a factor of 1.2.
+Since is a programming language that really is designed for manipulating numbers, we don't have to do something equivalent.
+Let's imagine we're trying to calculate how much caffeine we've taken in each day and realized that mug we're drinking out of is actually a little big bigger than the normal cup so we need to scale our entire data by a factor of 1.2.
 We can just multiply the whole object by 1.2.
 
 ```{r}
@@ -128,16 +126,18 @@ adjusted_coffees <- coffees * 1.2
 ```
 
 Now it might seems a bit extra to have two objects of two things that are related not as part of the same entity.
-Since they are two vectors of the same lenght, we can combine them into a data frame. 
+Since they are two vectors of the same length, we can combine them into a data frame. 
 In order to do this, let's make a new object with the `data.frame()` function. 
 
 ```{r}
 coffee_data <- data.frame(coffees, adjusted_coffees)
+
+coffee_data
 ``` 
 
-If we now run `coffee_data` in RStudio, we can see something that looks like what we're more familar with.
+If we now run `coffee_data` in RStudio, we can see something that looks like what we're more familiar with.
 
-* IMG OF ALL RUN 
+![](img/rbase-4.png)
 
 Now in general you won't build up data frames like this in R, we just want to show some of the parts and terms of data frames before you start working with them! 
 
@@ -162,7 +162,7 @@ If you want the first element of an ordered object in R you use the number 1.
 Notice here that there is a comma that lets R know that we're operating on a two dimensional object (it has rows and columns).
 Also notice that since we want all other columns, we leave everything after the comma blank.
 
-If we insetad wanted just the first column, we would type: 
+If we instead wanted just the first column, we would type: 
 
 ```{r}
 coffee_data[,1]
