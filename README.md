@@ -5,6 +5,8 @@
 * [ ] Images in from local 
 * [ ] Edit Text
 * [ ] Add in clear def of vector, dataframe, list 
+* [ ] Create matched R Scipt 
+* [ ] Create Matched RMarkdown 
 
 ## Introduction
 
