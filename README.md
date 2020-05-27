@@ -1,24 +1,20 @@
-# Base R Basics I
-
-##todo
-
-* [ ] Create Matched RMarkdown 
+# R Base-ics I
 
 ## Introduction
 
 In this lesson we're going to explore some of the basic functionality of what makes R, R!
 
-## Learning Objectives 
+## Objectives 
 
-By the end of this lesson, you will be able to: 
+You will be able to: 
 
-* [ ] Describe basic similarities and differences between R and Python code 
-* [ ] See an example of element-wise execution in R
-* [ ] Learn to identify what a vector in R
-* [ ] Learn to identify what a data frame is in R
-* [ ] Subset an R object using the square bracket operators
-* [ ] Use the `$` to subset a vector from a data frame
-* [ ] Identify where to go to learn more about R's data structures. 
+* Describe basic similarities and differences between R and Python code 
+* See an example of element-wise execution in R
+* Learn to identify what a vector in R
+* Learn to identify what a data frame is in R
+* Subset an R object using the square bracket operators
+* Use the `$` to subset a vector from a data frame
+* Identify where to go to learn more about R's data structures. 
 
 ## Getting Comfortable 
 
@@ -188,7 +184,7 @@ coffee_data$coffees[1]
 
 Just like Python, there are many, many ways to expand this out to get the data you might want and you can read about it [here if you would like](https://rstudio-education.github.io/hopr/), but in the later R lessons, we're actually going to focus on a different way of working with R to chop up data.
 
-## Conclusion
+## Summary
 
 We've just covered a lot! 
 We learned about some of the basic data structures in R such as data frames and vectors, as well as how to index data out of that data.
