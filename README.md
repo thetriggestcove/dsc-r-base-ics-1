@@ -1,9 +1,7 @@
-# Base R Basics I 
+# Base R Basics I
 
-## TO DO
+##todo
 
-* [ ] Edit Text
-* [ ] Add in clear def of vector, dataframe, list 
 * [ ] Create Matched RMarkdown 
 
 ## Introduction
@@ -21,7 +19,6 @@ By the end of this lesson, you will be able to:
 * [ ] Subset an R object using the square bracket operators
 * [ ] Use the `$` to subset a vector from a data frame
 * [ ] Identify where to go to learn more about R's data structures. 
-
 
 ## Getting Comfortable 
 
@@ -60,7 +57,7 @@ We can run this line by typing `CMD + RETURN` assuming that the cursor is on the
 This will send this line of output to be run through the console. 
 Notice that your output is now shown below. 
 
-Not that impressive, most programming langues can do that!
+Not that impressive, most programming languages can do that!
 Let's now write something that actually looks like R.
 
 ```{r}
@@ -72,8 +69,8 @@ Now don't just run it right away, let's take a second to think about what is the
 As with Python, we are assigning some sort of expression to an object.
 The naming conventions of objects in R as pretty much the same as Python, but notice that in R we use the assignment operator `<-` as opposed to equals `=`.
 There are a couple of different reasons why this is.
-The easy answer as to why this is, is because this is part of R's [style guide](). 
-The reason why this is is because... (addition in math language).
+The short answer as to why this is, is because this is part of R's [style guide](http://adv-r.had.co.nz/Style.html).
+You can google around if you want to find the long answer for why this is the case. 
 
 Now as we run this line, we know from before that it will get sent to the console.
 So knowing that we know what will happen, let's instead direct our attention to the top right panel when we run this.
@@ -104,7 +101,8 @@ coffees <- c(2,1,2,3,1,2,0,2,3,1)
 ```
 
 Now if we were in Python, this might start out a as a list and we'd have to numpyifiy it in order to do some math operations on it.
-Since is a programming language that really is designed for manipulating numbers, we don't have to do something equivalent.
+Since R is a programming language that really is designed for manipulating numbers, we don't have to do something equivalent.
+
 Let's imagine we're trying to calculate how much caffeine we've taken in each day and realized that mug we're drinking out of is actually a little big bigger than the normal cup so we need to scale our entire data by a factor of 1.2.
 We can just multiply the whole object by 1.2.
 
@@ -188,8 +186,7 @@ And if we wanted to get just the first entry of this, we could again use the `[ 
 coffee_data$coffees[1]
 ```
 
-Just like Python, there are many, many ways to expand this out to get the data you might want and you can read about it [here if you would like](https://rstudio-education.github.io/hopr/), but in the later R lessons, we're actually going to focus on a different way of working with R to chop up data. 
-
+Just like Python, there are many, many ways to expand this out to get the data you might want and you can read about it [here if you would like](https://rstudio-education.github.io/hopr/), but in the later R lessons, we're actually going to focus on a different way of working with R to chop up data.
 
 ## Conclusion
 
