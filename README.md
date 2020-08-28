@@ -28,7 +28,8 @@ In order to get practice working in RStudio, we suggest typing out this code in 
 
 In order to make a new script you need to click the little green icon in the top left corner and select NEW SCRIPT.
 
-![](https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-1.png)
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-1.png">
+
 
 What is great about RStudio is that you can run any line of your script, just like you can run any cell in a Jupyter Notebook, individually.
 If you hold down `CMD` and press `RETURN` on any selected line in the editor, you can run a line.
@@ -47,7 +48,7 @@ Again, let's just add two numbers.
 
 In RStudio it might look like this: 
 
-![](https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-2.png) 
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-2.png">
 
 We can run this line by typing `CMD + RETURN` assuming that the cursor is on the line you want to run.
 This will send this line of output to be run through the console. 
@@ -72,7 +73,7 @@ Now as we run this line, we know from before that it will get sent to the consol
 So knowing that we know what will happen, let's instead direct our attention to the top right panel when we run this.
 This top right panel is our Global Environment and keeps track of what variables are in our work space.
 
-![](https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-3.png)
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-3.png">
 
 If you did this, you screen will look something like above.
 The command was sent below and we now have a new value in our Global environment.
@@ -131,7 +132,7 @@ coffee_data
 
 If we now run `coffee_data` in RStudio, we can see something that looks like what we're more familiar with.
 
-![](https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-4.png)
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-r-base-ics-1/master/rbase-4.png">
 
 Now in general you won't build up data frames like this in R, we just want to show some of the parts and terms of data frames before you start working with them! 
 
